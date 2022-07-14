@@ -1,0 +1,19 @@
+<?php
+session_start();
+require("config.php");
+if(!empty($_POST))
+{
+    $user=$_POST['username'];
+    $name=$_POST['cname'];
+    $p=$_POST['phone'];
+    $pass=$_POST['cpass'];
+     $q="insert into customerdetails(username,cname,phone,cpass)values('$user','$name','$p','$pass')";
+    if(mysqli_query($conn,$q)==true)
+    {
+        header("location:signup.php?cust=1");
+    }
+    else
+    {
+        header("location:signup.php?fail=1");  
+    }
+}

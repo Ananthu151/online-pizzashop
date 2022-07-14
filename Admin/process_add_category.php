@@ -1,0 +1,21 @@
+<?php
+session_start();
+require("config.php");
+if(!empty($_POST))
+{
+    $category_name=$_POST['catname'];
+    $img=$_POST['image'];
+     $q="insert into categories(catname,catimg)values('$category_name','$img')";
+    if(mysqli_query($conn,$q)==true)
+    {
+        header("location:addcat.php?success=1");
+    }
+    else
+    {
+        header("location:addcat.php?fail=1");  
+    }
+}
+else
+{
+    header("location:addcat.php?missingcat=1");  
+}

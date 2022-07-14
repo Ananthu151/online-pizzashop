@@ -1,0 +1,226 @@
+body{
+	background:white;
+	color: black;
+	font-family: sans-serif;
+	font-weight: 20px;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.loginBox{
+	position:absolute;
+	top: 55%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: white;
+	border-radius: 20px;
+	box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.loginBox h2{
+	text-align: center;
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid silver;
+	border-radius: 2px;
+
+}
+.loginBox form{
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+form .text{
+	position: relative;
+	border-bottom: 1px solid #adadad;
+	margin: 30px 0;
+}
+.text input{
+	width: 100%
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+	font-family: sans-serif;
+	font-weight: bold;
+
+}
+
+.text label{
+	position: absolute;
+	top:50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+	font-weight: bold;
+
+}
+.text span::before{
+	content: '';
+	position: absolute;
+	top:40px;
+	left:0;
+	width:100%;
+	height: 2px;
+	transition: .5s;
+
+}
+.text input:focus ~ label,
+.text input:valid ~ label{
+	top:-5px;
+	color: #1f92e7;
+
+}
+.text input:focus ~ span::before,
+.text input:valid ~ span::before{
+	width: 100%;
+	background-color: #1f92e7;
+}
+input[type="submit"]{
+	width: 100%;
+	height:45px;
+	border:none;
+	background-image: url(../images/menu.jpg);
+  background-repeat: repeat;
+	border-radius: 25px;
+	font-size: 18px;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	margin-bottom: 50px;
+
+}
+input[type="submit"]:hover{
+box-shadow: 5px 5px 10px #dddddd;
+transition: .1s;
+border:none;
+background-image: url(../images/menu.jpg);
+  background-repeat: repeat;
+color: white;
+}
+
+
+
+.file .upload{
+
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    width: 100%;
+    background:white;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+    font-family: sans-serif;
+
+    }
+    .file .upload:hover{
+    	background-color: #f3f3f3;
+    	color: #1f92e7;
+    }
+  .file{
+    position: relative;
+    padding: 20px 0;
+  }
+  .file label{
+    position: absolute;
+    left: 6px;
+    top: 0px;
+    margin-top:1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #adadad;
+
+
+  }
+  .file input:focus ~ label,
+  .file input:valid ~ label,
+  .file input:hover ~ label{
+  color: #1f92e7;
+}
+
+::-webkit-file-upload-button{
+	color:white;
+	cursor: pointer;
+	padding: 10px;
+	background-image: url(../images/menu.jpg);
+  background-repeat: repeat;
+	font-family: sans-serif;
+	font-weight: bold;
+	border:none;
+	border-radius: 50px;
+	outline: none;
+	box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+::-webkit-file-upload-button:hover{
+	background-color:white;
+	color:white;
+}
+.cat{
+	position: relative;
+	margin-right: 20px;
+}
+.cat label{
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #adadad;
+	left:4px;
+	position: absolute;
+}
+.cat select{
+	cursor: pointer;
+	text-align: center;
+	align-items: center;
+	position: relative;
+	background-image: url(../images/menu.jpg);
+  background-repeat: repeat;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	height: 33px;
+	border:none;
+	outline: none;
+	padding-left: 5px;
+	margin-top: 30px;
+	border-radius: 50px;
+	
+}
+  .cat select:focus ~ label,
+  .cat select:valid ~ label,
+  .cat select:hover ~ label{
+  color: blue;
+}
+
+.both{
+	display: flex;
+
+}
+select:hover{
+	outline: none;
+	background-color: #1f92e7;
+	color: white;
+}
+option{
+	border:none;
+	border-radius: 10px;
+	box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+				-6px -6px 10px -1px rgba(255,255,255,0.7);
+
+}
+
+
+
+
+
